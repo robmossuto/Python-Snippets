@@ -2,14 +2,15 @@
 
 hrs = raw_input("Enter Hours:")
 h = float(hrs)
-basic_rate = 10.50
+rate = raw_input("Enter Rate:")
+r = float(rate)
 
 if h <=40:
-   pay = h * basic_rate
+   pay = h * r
 elif h > 40:
-   pay = 40* basic_rate + (h-40)*1.5*basic_rate
+   pay = 40* r + (h-40)*1.5*r
 else: 
-   print 'wrong parameter'
+   print 'incorrect input'
     
     
 print pay
